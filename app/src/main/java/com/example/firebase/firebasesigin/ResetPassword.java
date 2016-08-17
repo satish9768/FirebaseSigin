@@ -48,7 +48,7 @@ public class ResetPassword extends AppCompatActivity {
                     Toast.makeText(ResetPassword.this, "Please don't leave any field blank", Toast.LENGTH_SHORT).show();
                 } else {
 
-                    Firebase ref = new Firebase("https://simplelogin1.firebaseio.com/");
+                    Firebase ref = new Firebase("https://<Your Firebase App name>.firebaseio.com/");
                     ref.changePassword(rUserEmail, rOldPass, rNewPass, new Firebase.ResultHandler() {
                         @Override
                         public void onSuccess() {
