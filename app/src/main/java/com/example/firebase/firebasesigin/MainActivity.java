@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
                 } else {
 
                     // Authenticating user by email and password
-                    Firebase ref = new Firebase("https://<your App name>.firebaseio.com/");
+                    Firebase ref = new Firebase("https://<Your Firebase App name>.firebaseio.com/");
                     ref.authWithPassword(lUserEmail, lUserPass, new Firebase.AuthResultHandler() {
                         @Override
                         public void onAuthenticated(AuthData authData) {
