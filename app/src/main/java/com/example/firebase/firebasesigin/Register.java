@@ -53,7 +53,7 @@ public class Register extends AppCompatActivity {
                 } else {
 
                     // Creating an object of Firebase and passing the AppUrl
-                    Firebase ref = new Firebase("https://simplelogin1.firebaseio.com/");
+                    Firebase ref = new Firebase("https://<Your Firebase App name>.firebaseio.com/");
 
                     // User SignUp
                     ref.createUser(mUserEmail, mUserPass, new Firebase.ValueResultHandler<Map<String, Object>>() {
